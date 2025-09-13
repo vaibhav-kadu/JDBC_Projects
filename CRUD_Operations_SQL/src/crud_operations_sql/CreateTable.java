@@ -36,7 +36,7 @@ public class CreateTable {
 				}
 			}
 			
-			int operation = statement.executeUpdate("create table if not exists "+tbName+" (id int primary key auto_increment,name varchar(100))");
+			int operation = statement.executeUpdate("create table if not exists "+tbName+" (id int primary key auto_increment,name varchar(100),phone varchar(13))");
 			
 			if(operation==0) {
 				if(!found) {
